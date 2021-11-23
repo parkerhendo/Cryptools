@@ -1,4 +1,4 @@
-# React Editor
+# Cryptools
 
 ## Development guide
 
