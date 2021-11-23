@@ -10,10 +10,10 @@ import { h } from "preact";
 
 import styles from "../styles.css";
 
-const ActionRow = () => {
+const ActionRow = ({ label = "Action Row" }: { label: string }) => {
   return (
     <div className={styles.actionRow}>
-      <h3 className={styles.actionLabel}>Action Row</h3>
+      <h3 className={styles.actionLabel}>{label}</h3>
       <svg
         width="32"
         height="32"

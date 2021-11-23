@@ -35,9 +35,9 @@ function Plugin() {
       <VerticalSpace space="large" />
       <SectionHeader label="Actions" />
       <div className={styles.actions}>
-        <ActionRow />
-        <ActionRow />
-        <ActionRow />
+        <ActionRow label="Get gas price (current)" />
+        <ActionRow label="Generate wallet address"/>
+        <ActionRow label="Generate transaction hash"/>
       </div>
       <VerticalSpace space="small" />
     </Container>
