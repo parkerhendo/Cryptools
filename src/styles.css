@@ -1,6 +1,9 @@
-.container {
-  height: 164px;
-  overflow: auto;
+.tokenContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .sectionHeader {
@@ -37,7 +40,8 @@
   transition: background 0.1s ease-in;
 }
 
-.actionRow:hover, .actionRow svg:hover {
+.actionRow:hover,
+.actionRow svg:hover {
   background: rgba(0, 0, 0, 0.06);
 }
 
@@ -46,7 +50,7 @@
 }
 
 .actionRow svg:hover {
-  cursor:  pointer;
+  cursor: pointer;
 }
 
 .actionLabel {
@@ -56,4 +60,43 @@
   font-size: 12px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.tokenCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 88px;
+  height: 88px;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  background: #fff;
+  transition: background 0.1s ease-in;
+}
+
+.tokenCell:hover {
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.tokenLogo {
+  width: 40px;
+  height: auto;
+  background: lightblue;
+}
+
+.tokenName {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.0025em;
+
+  color: #000000;
 }

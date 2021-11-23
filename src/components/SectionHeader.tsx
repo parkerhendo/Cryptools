@@ -10,7 +10,7 @@ import { h } from "preact";
 
 import styles from "../styles.css";
 
-const ActionRow = ({ label = "Section Label" }: { label: string }) => {
+const SectionHeader = ({ label = "Section Label" }: { label: string }) => {
   return (
     <div className={styles.sectionHeader}>
       <h1 className={styles.sectionLabel}>{label}</h1>
@@ -18,4 +18,4 @@ const ActionRow = ({ label = "Section Label" }: { label: string }) => {
   );
 };
 
-export default ActionRow;
+export default SectionHeader;

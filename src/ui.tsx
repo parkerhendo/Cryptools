@@ -14,6 +14,7 @@ import { InsertCodeHandler } from "./types";
 
 import ActionRow from "./components/ActionRow";
 import SectionHeader from './components/SectionHeader';
+import TokenCell from './components/TokenCell';
 
 function Plugin() {
   return (
@@ -21,9 +22,15 @@ function Plugin() {
       <VerticalSpace space="small" />
       <SectionHeader label="Token Data" />
       <VerticalSpace space="small" />
-      <div className={styles.container}>Ethereum</div>
+      <div className={styles.tokenContainer}>
+        <TokenCell name="Ethereum" />
+        <TokenCell name="Ethereum" />
+        <TokenCell name="Ethereum" />
+        <TokenCell name="Ethereum" />
+      </div>
+      <VerticalSpace space="large" />
       <Button secondary fullWidth onClick={() => console.log("click")}>
-        Insert Code
+        Use custom wallet data
       </Button>
       <VerticalSpace space="large" />
       <SectionHeader label="Actions" />
